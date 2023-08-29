@@ -1,3 +1,31 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1E1E1E;
+  color: #D1D1D1;
+  height: 100vh;
+  margin: 0;
+  transition: all 0.3s ease;
+  line-height: 1.6;
+}
+
+a {
+  color: #BB86FC;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #3700B3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* App Specific Styles */
 .App {
   text-align: center;
 }
@@ -5,12 +33,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -21,81 +43,47 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1E1E1E; /* Deep dark background */
-  color: #D1D1D1; /* Off-white text for contrast */
-  height: 100vh;
-  margin: 0;
-  transition: all 0.3s ease;
-  line-height: 1.6;
-}
-
-a {
-  color: #BB86FC; /* Accent color for links */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #3700B3; /* Darker shade on hover */
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
+/* Interactive Elements */
 .button {
   background-color: transparent;
-  border: 1px solid #BB86FC; /* Accent color border */
+  border: 1px solid #BB86FC;
   padding: 10px 20px;
-  color: #BB86FC; /* Accent color text */
+  color: #BB86FC;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 4px;
 }
 
 .button:hover {
-  background-color: #BB86FC; /* Accent color on hover */
-  color: #1E1E1E; /* Dark text on hover */
+  background-color: #BB86FC;
+  color: #1E1E1E;
 }
 
 input[type="text"], input[type="email"], input[type="password"], select {
   width: 100%;
   padding: 10px;
-  background-color: #2A2A2A; /* Slightly lighter than body background */
-  border: 1px solid #3C3C3C; /* Subtle border */
-  color: #D1D1D1; /* Off-white text */
+  background-color: #2A2A2A;
+  border: 1px solid #3C3C3C;
+  color: #D1D1D1;
   transition: border-color 0.3s ease;
   border-radius: 4px;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
-  border-color: #BB86FC; /* Accent color for focus */
+  border-color: #BB86FC;
   outline: none;
 }
 
+/* Cards & Sections */
 .card {
-  background-color: #2A2A2A; /* Slightly lighter than body background */
-  border: 1px solid #3C3C3C; /* Subtle border */
+  background-color: #2A2A2A;
+  border: 1px solid #3C3C3C;
   padding: 20px;
   margin: 20px 0;
   border-radius: 5px;
@@ -103,21 +91,22 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
-  border-bottom: 1px solid #3C3C3C; /* Subtle border for section titles */
+  border-bottom: 1px solid #3C3C3C;
   padding-bottom: 10px;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
 }
 
+/* Navigation Bar */
 .navbar {
-  background-color: #2A2A2A; /* Slightly lighter than body background */
+  background-color: #2A2A2A;
   padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -132,5 +121,21 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar a:hover {
-  background-color: #3C3C3C; /* Slightly darker background on hover */
+  background-color: #3C3C3C;
+}
+
+/* Logo Animation */
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+  }
 }

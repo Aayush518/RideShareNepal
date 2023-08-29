@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-creator, .footer-copyright {
+    font-size: 0.9em;
+    color: var(--footer-color);  
+}

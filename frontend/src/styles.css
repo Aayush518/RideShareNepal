@@ -1,9 +1,11 @@
 /* Light Theme */
 :root.light-theme {
-    --bg-color: #FFFFFF;
-    --text-color: #333333;
-    --primary-color: #BB86FC;
-    --secondary-color: #3700B3;
+    --bg-color: #F5F5F5;
+    --text-color: #333;
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --border-color: #E0E0E0;
+    --footer-color: grey;
 }
 
 /* Dark Theme */
@@ -12,11 +14,14 @@
     --text-color: #D1D1D1;
     --primary-color: #BB86FC;
     --secondary-color: #3700B3;
+    --border-color: #444;
+    --footer-color: white;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    font-family: 'Arial', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -24,6 +29,7 @@ body {
     background: var(--bg-color);
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar a, .footer a {
@@ -40,9 +46,10 @@ body {
 .login-form, .register-form {
     margin: 20px;
     padding: 20px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     background: var(--bg-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
@@ -50,8 +57,8 @@ input[type="text"], input[type="email"], input[type="password"] {
     margin: 10px 0;
     padding: 10px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--primary-color);
+    background: #fff;
+    border: 1px solid var(--border-color);
     color: var(--text-color);
 }
 
@@ -59,7 +66,7 @@ button {
     padding: 10px 20px;
     background: var(--primary-color);
     border: none;
-    color: var(--bg-color);
+    color: #fff;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -69,17 +76,17 @@ button:hover {
 }
 
 .switch-theme-btn {
-    position: fixed;  /* Fix the position relative to the viewport */
-    bottom: 20px;     /* 20px from the bottom */
-    right: 20px;      /* 20px from the right */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
     background: var(--primary-color);
     border: none;
     color: var(--bg-color);
     cursor: pointer;
     transition: background 0.3s ease;
-    border-radius: 5px; /* Rounded corners */
-    z-index: 1000;      /* Ensure it's above other elements */
+    border-radius: 5px;
+    z-index: 1000;
 }
 
 .switch-theme-btn:hover {

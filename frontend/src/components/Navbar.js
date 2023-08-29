@@ -6,10 +6,10 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <Link to="/">RideShareNepal</Link>
+                <Link to="/">RideShare Nepal</Link>
             </div>
             <div className="navbar-links">
-                <Link to="/about">About Us</Link>
+                <Link to="/about">About us</Link>
                 <Link to="/features">Features</Link>
                 <Link to="/contact">Contact</Link>
             </div>

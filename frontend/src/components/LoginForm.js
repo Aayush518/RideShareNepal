@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1 } }
+    hidden: { opacity: 0, y: '-50vh' },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, type: 'spring', stiffness: 120 } }
 };
 
 function LoginForm() {
@@ -23,7 +23,7 @@ function LoginForm() {
                 </div>
                 <button type="submit">Login</button>
             </form>
-            <a href="/forgot-password" style={{ color: 'green' }}>Forgot Password?</a>
+            <a href="/forgot-password" style={{ color: 'maroon' }}>Forgot Password?</a>
         </motion.div>
     );
 }

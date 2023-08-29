@@ -6,7 +6,8 @@ function Home() {
         <div className="home-container">
             <div className="background-3d"></div>
             <div className="home-content">
-                <h1 className="slide-in-element">Welcome to RideShareNepal</h1>
+                <h1 className="slide-in-element">Welcome to RideShare Nepal</h1>
+                
                 <p>Your trusted ride-sharing platform in Nepal.</p>
                 <p>Join us now and explore the features.</p>
                 <div className="cta">

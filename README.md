@@ -29,7 +29,7 @@ RideShareNepal is a cutting-edge platform that bridges drivers and passengers in
 
 <div align="center">
 
-![frontend\src\assets\demo (2).gif]()
+![!RideShareNepal demo](frontend\src\assets\demo (2).gif)
 
 _For a more interactive demo, check out [RideShareNepal Live](your-live-site-link)._
 

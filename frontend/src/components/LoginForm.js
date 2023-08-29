@@ -17,8 +17,13 @@ function LoginForm() {
             <form action="/login" method="post">
                 <input type="email" name="email" placeholder="Email" required />
                 <input type="password" name="password" placeholder="Password" required />
+                <div>
+                    <input type="checkbox" id="rememberMe" name="rememberMe" />
+                    <label htmlFor="rememberMe">Remember Me</label>
+                </div>
                 <button type="submit">Login</button>
             </form>
+            <a href="/forgot-password">Forgot Password?</a>
         </motion.div>
     );
 }

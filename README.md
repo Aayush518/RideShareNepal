@@ -1,7 +1,9 @@
-
+<div align="center">
+#just started
+</div>
 
 <div align="center">
-   #just started
+   
 # 🚗 RideShareNepal 🚗
 
 ![RideShareNepal Banner](path-to-your-banner-image.png)

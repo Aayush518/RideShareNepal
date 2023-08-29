@@ -23,7 +23,7 @@ function LoginForm() {
                 </div>
                 <button type="submit">Login</button>
             </form>
-            <a href="/forgot-password">Forgot Password?</a>
+            <a href="/forgot-password" style={{ color: 'green' }}>Forgot Password?</a>
         </motion.div>
     );
 }

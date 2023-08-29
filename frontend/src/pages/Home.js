@@ -8,7 +8,6 @@ function Home() {
             <h1>Welcome to RideShareNepal</h1>
             <LoginForm />
             <RegisterForm />
-            {/* Add other homepage components here */}
         </div>
     );
 }

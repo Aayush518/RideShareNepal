@@ -1,5 +1,4 @@
 
-
 <div align="center">
 
 # 🚗 RideShareNepal 🚗
@@ -29,7 +28,7 @@ RideShareNepal is a cutting-edge platform that bridges drivers and passengers in
 
 <div align="center">
 
-![RideShare Nepal demo](frontend\src\assets\demo.gif)
+![RideShare Nepal demo](frontend/src/assets/demo.gif)
 
 _For a more interactive demo, check out [RideShareNepal Live](your-live-site-link)._
 
@@ -115,4 +114,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [MongoDB](https://www.mongodb.com/)
 - [Node.js](https://nodejs.org/)
 - Special thanks to all contributors and supporters!
-
+```

@@ -7,6 +7,14 @@ function Register() {
         password: '',
         userType: '' // 'driver' or 'passenger'
     });
+    const [message, setMessage] = useState('');
+
+    const formStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        width: '300px',
+        margin: '0 auto'
+    };
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -23,7 +31,7 @@ function Register() {
                 body: JSON.stringify(formData),
             });
             const data = await response.json();
-            console.log(data);
+            setMessage(data);
         } catch (error) {
             console.error("Error during registration:", error);
         }
@@ -31,7 +39,7 @@ function Register() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} style={formStyle}>
                 <input type="text" name="name" placeholder="Name" onChange={handleChange} />
                 <input type="email" name="email" placeholder="Email" onChange={handleChange} />
                 <input type="password" name="password" placeholder="Password" onChange={handleChange} />
@@ -42,6 +50,7 @@ function Register() {
                 </select>
                 <button type="submit">Register</button>
             </form>
+            {message && <p>{message}</p>}
         </div>
     );
 }

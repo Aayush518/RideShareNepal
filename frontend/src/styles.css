@@ -1,34 +1,48 @@
+/* Light Theme */
+:root.light-theme {
+    --bg-color: #FFFFFF;
+    --text-color: #333333;
+    --primary-color: #BB86FC;
+    --secondary-color: #3700B3;
+}
+
+/* Dark Theme */
+:root.dark-theme {
+    --bg-color: #1E1E1E;
+    --text-color: #D1D1D1;
+    --primary-color: #BB86FC;
+    --secondary-color: #3700B3;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #1E1E1E, #2A2A2A);
-    color: #D1D1D1;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar, .footer {
-    background: linear-gradient(45deg, #282828, #3C3C3C);
+    background: var(--bg-color);
     padding: 10px;
     text-align: center;
 }
 
 .navbar a, .footer a {
     margin: 0 15px;
-    color: #BB86FC;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover, .footer a:hover {
-    color: #3700B3;
+    color: var(--secondary-color);
 }
 
 .login-form, .register-form {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #3C3C3C;
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
-    background: rgba(42, 42, 42, 0.8); /* Slight transparency */
+    background: var(--bg-color);
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
@@ -37,19 +51,37 @@ input[type="text"], input[type="email"], input[type="password"] {
     padding: 10px;
     width: 100%;
     background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #BB86FC;
-    color: #D1D1D1;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
 }
 
 button {
     padding: 10px 20px;
-    background: linear-gradient(45deg, #BB86FC, #3700B3);
+    background: var(--primary-color);
     border: none;
-    color: #1E1E1E;
+    color: var(--bg-color);
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 button:hover {
-    background: linear-gradient(45deg, #3700B3, #BB86FC);
+    background: var(--secondary-color);
+}
+
+.switch-theme-btn {
+    position: fixed;  /* Fix the position relative to the viewport */
+    bottom: 20px;     /* 20px from the bottom */
+    right: 20px;      /* 20px from the right */
+    padding: 10px 20px;
+    background: var(--primary-color);
+    border: none;
+    color: var(--bg-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000;      /* Ensure it's above other elements */
+}
+
+.switch-theme-btn:hover {
+    background: var(--secondary-color);
 }

@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-// Placeholder for user registration
 router.post('/register', (req, res) => {
-    // TODO: Implement user registration logic
-    res.send('User registered');
+    const { name, email, password, userType } = req.body;
+    // TODO: Add validation, hashing, and database insertion logic here
+    res.send('User registered successfully');
 });
 
 module.exports = router;

@@ -43,43 +43,55 @@ body {
     color: var(--secondary-color);
 }
 
+/* Login & Register Form Styles */
 .login-form, .register-form {
-    margin: 20px;
+    width: 280px; /* Reduced width for a more compact look */
+    margin: 50px auto; /* Centered with added vertical spacing */
     padding: 20px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     background: var(--bg-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.login-form h2, .register-form h2 {
+    font-size: 24px; /* Adjusted font size */
+    color: var(--primary-color);
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    font-weight: 500; /* Bolder heading */
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 8px 0; /* Reduced margin for a more compact look */
+    padding: 8px; /* Reduced padding for shorter fill boxes */
     width: 100%;
     background: #fff;
     border: 1px solid var(--border-color);
     color: var(--text-color);
+    border-radius: 4px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Adjusted padding for a more compact look */
     background: var(--primary-color);
     border: none;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s ease;
+    border-radius: 4px;
 }
 
 button:hover {
     background: var(--secondary-color);
 }
 
+
 .switch-theme-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
+    padding: 8px 12px;
+    font-size: 18;
     background: var(--primary-color);
     border: none;
     color: var(--bg-color);
@@ -88,7 +100,9 @@ button:hover {
     border-radius: 5px;
     z-index: 1000;
 }
-
-.switch-theme-btn:hover {
-    background: var(--secondary-color);
+.switch-theme-btn.dark {
+    content: "🌙"; /* Moon icon for dark mode */
+}
+.switch-theme-btn.light {
+    content: "☀"; /* Sun icon for light mode */
 }

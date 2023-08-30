@@ -25,11 +25,10 @@ function App() {
     };
 
     return (
-      
         <Router>
             <Navbar />
-            <button className="switch-theme-btn" onClick={toggleTheme}>
-                Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+            <button className={`switch-theme-btn ${theme}`} onClick={toggleTheme}>
+                {theme === 'light' ? '🌙 Dark Mode' : '☀ Light Mode'}
             </button>
             <Routes>
                 <Route path="/" element={<Home />} />

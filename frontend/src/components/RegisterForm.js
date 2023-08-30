@@ -8,11 +8,7 @@ const containerVariants = {
 
 function RegisterForm() {
     return (
-        <motion.div className="register-form"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-        >
+        <motion.div className="auth-form register-form" variants={containerVariants} initial="hidden" animate="visible">
             <h2>Register</h2>
             <form action="/register" method="post">
                 <input type="text" name="username" placeholder="Username" required />

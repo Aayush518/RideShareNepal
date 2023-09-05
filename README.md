@@ -1,5 +1,5 @@
 <div align="center">
-#just started
+
 </div>
 
 <div align="center">

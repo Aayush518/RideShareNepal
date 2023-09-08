@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-   #continued
+   
 # 🚗 RideShareNepal 🚗
 
 ![RideShareNepal Banner](path-to-your-banner-image.png)
